@@ -4,6 +4,8 @@ import io.vavr.collection.Vector;
 import io.vavr.control.Option;
 import lombok.EqualsAndHashCode;
 
+import static com.google.common.base.Preconditions.checkArgument;
+
 @EqualsAndHashCode
 public class Board implements GameBoard {
     private final Vector<Vector<Cell>> rows;
@@ -13,15 +15,13 @@ public class Board implements GameBoard {
 
     public Board(int xDim, int yDim) {
 
+        checkArgument(xDim > 0,
+                "The x dimension must be positive.");
+        checkArgument(yDim > 0,
+                "The y dimension must be positive.");
+
         this.xDim = xDim;
         this.yDim = yDim;
-
-        if (xDim <= 0) {
-            throw new IllegalArgumentException("The x dimension must be positive.");
-        }
-        if (yDim <= 0) {
-            throw new IllegalArgumentException("The y dimension must be positive.");
-        }
 
         Vector<Vector<Cell>> cells = Vector.empty();
 
@@ -118,6 +118,19 @@ public class Board implements GameBoard {
         } else {
             return 0;
         }
+    }
+
+
+    public int BombCount() {
+        int count = 0;
+        for (int i = 0; i < getxDim(); i++) {
+            for (int j = 0; j < getyDim(); j++) {
+                if( rows.get(i).get(j).getType() == CellType.Bomb) {
+                    count++;
+                }
+            }
+        }
+        return count;
     }
 
 

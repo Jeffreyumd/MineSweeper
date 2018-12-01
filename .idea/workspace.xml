@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33b3288e-e4d2-4722-bb71-33ecd115db4f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/alhassan/minesweeper/model/GameBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_27_0_1_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/testBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MineSweeper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MineSweeper.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/alhassan/minesweeper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alhassan/minesweeper/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/alhassan/minesweeper/model/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alhassan/minesweeper/model/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alhassan/minesweeper/model/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alhassan/minesweeper/model/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alhassan/minesweeper/model/MinesweeperGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alhassan/minesweeper/model/MinesweeperGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/alhassan/minesweeper/model/MinesweeperGame$GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/alhassan/minesweeper/model/MinesweeperGame$GameState.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,27 +39,27 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="12" />
-          <entry key="xml" value="1" />
+          <entry key="java" value="13" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="12" />
-          <entry key="XML" value="1" />
+          <entry key="JAVA" value="13" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5102" />
-          <entry key="xml" value="25" />
+          <entry key="java" value="5736" />
+          <entry key="xml" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5102" />
-          <entry key="XML" value="25" />
+          <entry key="JAVA" value="5736" />
+          <entry key="XML" value="27" />
         </counts>
       </usages-collector>
     </session>
@@ -75,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/alhassan/minesweeper/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+            <state relative-caret-position="135">
+              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/alhassan/minesweeper/model/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="77" column="55" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
+            <state relative-caret-position="214">
+              <caret line="129" column="13" lean-forward="true" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1533#1534#0" expanded="true" />
@@ -106,29 +115,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/alhassan/minesweeper/model/GameBoard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/alhassan/minesweeper/model/CellFlag.java">
+        <entry file="file://$PROJECT_DIR$/test/testBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/alhassan/minesweeper/model/CellType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="255">
+              <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#131#132#0" expanded="true" />
+                <element signature="e#178#179#0" expanded="true" />
+                <element signature="e#667#668#0" expanded="true" />
+                <element signature="e#715#716#0" expanded="true" />
+                <element signature="e#814#815#0" expanded="true" />
+                <element signature="e#862#863#0" expanded="true" />
+                <element signature="e#961#962#0" expanded="true" />
+                <element signature="e#1008#1009#0" expanded="true" />
+                <element signature="e#1105#1106#0" expanded="true" />
+                <element signature="e#1151#1152#0" expanded="true" />
+                <element signature="e#1248#1249#0" expanded="true" />
+                <element signature="e#1294#1295#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,9 +144,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -158,13 +164,14 @@
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/alhassan/minesweeper/model/CellType.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/alhassan/minesweeper/model/CellFlag.java" />
-        <option value="$PROJECT_DIR$/src/alhassan/minesweeper/Main.java" />
         <option value="$PROJECT_DIR$/src/alhassan/minesweeper/model/Cell.java" />
         <option value="$PROJECT_DIR$/src/alhassan/minesweeper/model/MinesweeperGame.java" />
-        <option value="$PROJECT_DIR$/src/alhassan/minesweeper/model/Board.java" />
         <option value="$PROJECT_DIR$/src/alhassan/minesweeper/model/GameBoard.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/test/testBoard.java" />
+        <option value="$PROJECT_DIR$/src/alhassan/minesweeper/Main.java" />
+        <option value="$PROJECT_DIR$/src/alhassan/minesweeper/model/Board.java" />
       </list>
     </option>
   </component>
@@ -174,7 +181,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="812" />
@@ -225,7 +232,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543647174577" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543650904148" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -243,7 +250,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.testBoard">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="alhassan.minesweeper.Main" />
       <module name="MineSweeper" />
@@ -275,9 +282,58 @@
       <module name="" />
       <method v="2" />
     </configuration>
+    <configuration name="testBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MineSweeper" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testBoard" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testBoard.testBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MineSweeper" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testBoard" />
+      <option name="METHOD_NAME" value="testBoard" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testBoard.test_getCell" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MineSweeper" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testBoard" />
+      <option name="METHOD_NAME" value="test_getCell" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testBoard.test_getCell_getEmptyCell" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MineSweeper" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testBoard" />
+      <option name="METHOD_NAME" value="test_getCell_getEmptyCell" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.testBoard.testBoard" />
+      <item itemvalue="JUnit.testBoard" />
+      <item itemvalue="JUnit.testBoard.test_getCell_getEmptyCell" />
+      <item itemvalue="JUnit.testBoard.test_getCell" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.testBoard" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.testBoard.test_getCell" />
+        <item itemvalue="JUnit.testBoard.test_getCell_getEmptyCell" />
+        <item itemvalue="JUnit.testBoard.testBoard" />
       </list>
     </recent_temporary>
   </component>
@@ -293,15 +349,47 @@
       <updated>1543627847458</updated>
       <workItem from="1543627849194" duration="699000" />
       <workItem from="1543628602187" duration="5337000" />
-      <workItem from="1543637833192" duration="4468000" />
+      <workItem from="1543637833192" duration="6597000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="testBoard_testBoard - 2018.12.01 at 02h 31m 16s.xml">
+      <configuration name="testBoard.testBoard" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testBoard_testBoard - 2018.12.01 at 02h 31m 28s.xml">
+      <configuration name="testBoard.testBoard" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testBoard_testBoard - 2018.12.01 at 02h 32m 24s.xml">
+      <configuration name="testBoard.testBoard" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testBoard_testBoard - 2018.12.01 at 02h 32m 36s.xml">
+      <configuration name="testBoard.testBoard" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testBoard - 2018.12.01 at 02h 36m 46s.xml">
+      <configuration name="testBoard" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testBoard - 2018.12.01 at 02h 37m 10s.xml">
+      <configuration name="testBoard" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testBoard_test_getCell_getEmptyCell - 2018.12.01 at 02h 41m 46s.xml">
+      <configuration name="testBoard.test_getCell_getEmptyCell" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testBoard_test_getCell - 2018.12.01 at 02h 44m 21s.xml">
+      <configuration name="testBoard.test_getCell" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testBoard - 2018.12.01 at 02h 44m 29s.xml">
+      <configuration name="testBoard" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="testBoard - 2018.12.01 at 02h 48m 41s.xml">
+      <configuration name="testBoard" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10504000" />
+    <option name="totallyTimeSpent" value="12633000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="812" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
@@ -313,7 +401,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32916668" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28554216" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -322,7 +410,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32916668" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32891566" />
       <window_info anchor="right" id="Leiningen" />
       <window_info anchor="right" id="REPL" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -368,27 +456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alhassan/minesweeper/model/CellFlag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alhassan/minesweeper/model/CellType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/alhassan/minesweeper/model/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -401,12 +468,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/alhassan/minesweeper/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/alhassan/minesweeper/model/GameBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        <state relative-caret-position="345">
+          <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alhassan/minesweeper/model/CellFlag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/alhassan/minesweeper/model/CellType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/testBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#131#132#0" expanded="true" />
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#961#962#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1105#1106#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1248#1249#0" expanded="true" />
+            <element signature="e#1294#1295#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -424,10 +531,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/alhassan/minesweeper/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/alhassan/minesweeper/model/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="77" column="55" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
+        <state relative-caret-position="214">
+          <caret line="129" column="13" lean-forward="true" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1533#1534#0" expanded="true" />
@@ -441,13 +558,6 @@
             <element signature="e#2332#2333#0" expanded="true" />
             <element signature="e#2380#2381#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/alhassan/minesweeper/model/GameBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
         </state>
       </provider>
     </entry>
