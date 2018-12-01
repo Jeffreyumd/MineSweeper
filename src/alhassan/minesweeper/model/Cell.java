@@ -8,6 +8,7 @@ import lombok.ToString;
 @EqualsAndHashCode
 @Getter
 public class Cell {
+
     private CellType type;
     private CellFlag flag;
     private boolean hidden;

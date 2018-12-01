@@ -5,11 +5,17 @@ import io.vavr.control.Option;
 import lombok.EqualsAndHashCode;
 
 @EqualsAndHashCode
-public class Board {
+public class Board implements GameBoard {
     private final Vector<Vector<Cell>> rows;
     private static final double BOMB_FRACTION = 0.1;
+    private int xDim;
+    private int yDim;
 
     public Board(int xDim, int yDim) {
+
+        this.xDim = xDim;
+        this.yDim = yDim;
+
         if (xDim <= 0) {
             throw new IllegalArgumentException("The x dimension must be positive.");
         }
@@ -30,11 +36,16 @@ public class Board {
         this.rows = cells;
     }
 
+
+    public int getxDim() { return this.xDim; }
+
+    public int getyDim() { return this.yDim; }
+
+    @Override
     public Option<Cell> getCell(int x, int y) {
         if (this.inBounds(x, y)) {
             return Option.of(this.rows.get(y).get(x));
-        }
-        else {
+        } else {
             return Option.none();
         }
     }
@@ -43,10 +54,17 @@ public class Board {
         this.rows = rows;
     }
 
+    /**
+     * Checks if the given coordinates are in the bounds.
+     * @param x The given x position
+     * @param y The given y position
+     * @return Boolean if the coordinates are in the bounds
+     */
     private boolean inBounds(int x, int y) {
         return y < this.getHeight() && y >= 0 && x < this.getWidth() && x >= 0;
     }
 
+    @Override
     public Board flagCell(int x, int y) {
         if (!inBounds(x, y)) {
             return this;
@@ -77,6 +95,7 @@ public class Board {
         return this.rows.get(0).length();
     }
 
+    @Override
     public int surroundingBombs(int x, int y) {
         if (inBounds(x, y)) {
             Vector<Cell> cellsToCheck = Vector.of(
@@ -96,8 +115,7 @@ public class Board {
                 total += cellToCheck.getType() == CellType.Bomb ? 1 : 0;
             }
             return total;
-        }
-        else {
+        } else {
             return 0;
         }
     }
@@ -110,7 +128,7 @@ public class Board {
             for (Cell cell : col) {
                 switch (cell.getType()) {
                     case Bomb:
-                        sb.append("\uD83D\uDCA3");
+                        sb.append("\uD83D\uDD25");
                         break;
                     case Empty:
                         sb.append("__");
@@ -124,8 +142,6 @@ public class Board {
 
         return sb.toString();
     }
-
-
 
 
 }
