@@ -1,13 +1,12 @@
 package alhassan.minesweeper;
 
 import alhassan.minesweeper.model.Board;
-import alhassan.minesweeper.model.CellType;
 
 public class Main {
     public static void main(String[] args) {
         Board board = new Board(10,10);
         System.out.println(board);
-        System.out.println(board.BombCount());
+        System.out.println(board.bombCount());
         System.out.println(board.getCell(0, 0));
 
 

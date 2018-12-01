@@ -2,7 +2,7 @@ package alhassan.minesweeper.model;
 
 import io.vavr.control.Option;
 
-public interface GameBoard {
+public interface IBoard {
 
 
     /**

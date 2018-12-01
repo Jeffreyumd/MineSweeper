@@ -7,7 +7,7 @@ import lombok.EqualsAndHashCode;
 import static com.google.common.base.Preconditions.checkArgument;
 
 @EqualsAndHashCode
-public class Board implements GameBoard {
+public class Board implements IBoard {
     private final Vector<Vector<Cell>> rows;
     private static final double BOMB_FRACTION = 0.1;
     private int xDim;
@@ -104,16 +104,17 @@ public class Board implements GameBoard {
                     this.getCell(x - 1, y),
                     this.getCell(x - 1, y - 1),
                     this.getCell(x - 1, y + 1),
-
                     this.getCell(x + 1, y),
                     this.getCell(x + 1, y - 1),
                     this.getCell(x + 1, y + 1)
             ).filter(Option::isDefined).map(Option::get);
 
             int total = 0;
+
             for (Cell cellToCheck : cellsToCheck) {
                 total += cellToCheck.getType() == CellType.Bomb ? 1 : 0;
             }
+
             return total;
         } else {
             return 0;
@@ -121,7 +122,7 @@ public class Board implements GameBoard {
     }
 
 
-    public int BombCount() {
+    public int bombCount() {
         int count = 0;
         for (int i = 0; i < getxDim(); i++) {
             for (int j = 0; j < getyDim(); j++) {

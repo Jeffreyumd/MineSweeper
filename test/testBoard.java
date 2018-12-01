@@ -1,4 +1,6 @@
 import alhassan.minesweeper.model.Board;
+import alhassan.minesweeper.model.CellFlag;
+import com.google.common.collect.Range;
 import io.vavr.control.Option;
 import org.junit.Test;
 
@@ -22,6 +24,20 @@ public class testBoard {
     public void test_getCell_getEmptyCell() {
         Board board = new Board(10, 10);
         assertEquals(Option.none(), board.getCell(0, 50000));
+    }
+
+    @Test
+    public void test_flagBoard_for_all_State() {
+        Board board = new Board(10, 10);
+        assertEquals(CellFlag.None, board.getCell(0,0).get().getFlag());
+        assertEquals(CellFlag.Flagged, board.flagCell(0,0).getCell(0,0).get().getFlag());
+        assertEquals(CellFlag.Questioned, board.flagCell(0,0).getCell(0,0).get().getFlag().cycle());
+    }
+
+    @Test
+    public void test_bombCount() {
+        Board board = new Board(10, 10);
+        assertEquals(10, board.bombCount(), Range.closed(5, 20).upperEndpoint());
     }
 
 
