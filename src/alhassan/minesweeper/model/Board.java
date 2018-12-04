@@ -8,13 +8,16 @@ import static com.google.common.base.Preconditions.checkArgument;
 
 @EqualsAndHashCode
 public class Board implements IBoard {
-    private final Vector<Vector<Cell>> rows;
+
+
+    private final Vector<Vector<Cell>> rows;  // vavr vector for constant time access
     private static final double BOMB_FRACTION = 0.1;
     private int xDim;
     private int yDim;
 
     public Board(int xDim, int yDim) {
 
+        //guava Argument checker.. throw IllegalArgumentException
         checkArgument(xDim > 0,
                 "The x dimension must be positive.");
         checkArgument(yDim > 0,
@@ -37,9 +40,13 @@ public class Board implements IBoard {
     }
 
 
-    public int getxDim() { return this.xDim; }
+    public int getxDim() {
+        return this.xDim;
+    }
 
-    public int getyDim() { return this.yDim; }
+    public int getyDim() {
+        return this.yDim;
+    }
 
     @Override
     public Option<Cell> getCell(int x, int y) {
@@ -56,6 +63,7 @@ public class Board implements IBoard {
 
     /**
      * Checks if the given coordinates are in the bounds.
+     *
      * @param x The given x position
      * @param y The given y position
      * @return Boolean if the coordinates are in the bounds
@@ -77,6 +85,21 @@ public class Board implements IBoard {
         return new Board(
                 this.rows.update(y, row -> row.update(x, cell))
         );
+    }
+
+    @Override
+    public Board clickCell(int x, int y) {
+
+        if (!inBounds(x, y)) {
+            return this;
+        }
+
+        if (this.rows.get(x).get(y).getType() == CellType.Empty) {
+            System.out.println("Works");
+            Cell newCell = this.rows.get(x).get(y).withHidden();
+            return this.setCell(x, y, newCell);
+        }
+        return this;
     }
 
     private Cell generateCell() {
@@ -126,7 +149,7 @@ public class Board implements IBoard {
         int count = 0;
         for (int i = 0; i < getxDim(); i++) {
             for (int j = 0; j < getyDim(); j++) {
-                if( rows.get(i).get(j).getType() == CellType.Bomb) {
+                if (rows.get(i).get(j).getType() == CellType.Bomb) {
                     count++;
                 }
             }
@@ -145,7 +168,7 @@ public class Board implements IBoard {
                         sb.append("\uD83D\uDD25");
                         break;
                     case Empty:
-                        sb.append("__");
+                        sb.append("\u23FA");
                         break;
                     default:
                         throw new RuntimeException("Unhandled Cell type");

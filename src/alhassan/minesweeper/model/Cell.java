@@ -26,4 +26,8 @@ public class Cell {
     public Cell cycleFlag() {
         return new Cell(this.type, this.flag.cycle(), this.hidden);
     }
+
+    public Cell withHidden() {
+        return new Cell(this.type, this.flag.cycle(), false);
+    }
 }

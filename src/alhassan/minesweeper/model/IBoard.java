@@ -2,8 +2,10 @@ package alhassan.minesweeper.model;
 
 import io.vavr.control.Option;
 
+/**
+ * Represents a game board for minesweeper
+ */
 public interface IBoard {
-
 
     /**
      * Return a cell in the board from the given coordinates,
@@ -24,6 +26,14 @@ public interface IBoard {
      * @return The board with the flagged updated flagged cell
      */
     Board flagCell(int x, int y);
+
+    /**
+     * Return a new Board with the reveled cell. If the cell has already being clicked do nothing.
+     * @param x The x position of the cell
+     * @param y The y position of the cell
+     * @return The board with reveled cell
+     */
+    Board clickCell(int x, int y);
 
     /**
      * Count the number of surrounding bombs in each neighboring cell for the given coordinate.
